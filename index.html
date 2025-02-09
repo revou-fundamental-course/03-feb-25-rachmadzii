@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="converter">
+      <h1>Temperature Converter</h1>
+
+      <p>
+        Masukkan suhu derajat Celcius (°C) atau Fahrenheit (°F) dan klik tombol
+        konversi untuk mendapatkan hasil konversi.
+      </p>
+
+      <div class="input-wrapper">
+        <label for="celsius">Celsius (°C):</label>
+        <input
+          type="number"
+          id="celsius"
+          placeholder="Masukkan nilai Celsius"
+        />
+      </div>
+
+      <div class="input-wrapper">
+        <label for="fahrenheit">Fahrenheit (°F):</label>
+        <input
+          type="number"
+          id="fahrenheit"
+          placeholder="Masukkan nilai Fahrenheit"
+        />
+      </div>
+
+      <hr />
+
+      <p id="conversionDirectionText">Konversi dari Celsius ke Fahrenheit</p>
+      <p id="conversionFormulaText">Rumus: °F = (°C × 1,8) + 32</p>
+
+      <div class="button-wrapper">
+        <button class="convert" onclick="convertTemperature()">Konversi</button>
+        <button class="reverse" onclick="reverseConversion()">Reverse</button>
+      </div>
+
+      <button class="reset" onclick="resetFields()">Reset</button>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

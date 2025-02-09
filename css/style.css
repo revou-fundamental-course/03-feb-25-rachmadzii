@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200..800&display=swap');
+
+:root {
+  --font-family: 'Karla', serif;
+  --font-size-base: 16px;
+  --font-size-large: 24px;
+  --color-primary: #007bff;
+  --color-primary-hover: #0056b3;
+  --color-danger: #dc3545;
+  --color-danger-hover: #c82333;
+  --color-text: #0049c1;
+  --color-background: #f0f0f0;
+  --color-white: #fff;
+  --color-border: #ccc;
+  --border-radius: 4px;
+  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  --spacing-small: 8px;
+  --spacing-medium: 10px;
+  --spacing-large: 20px;
+  --spacing-xlarge: 24px;
+}
+
+* {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--color-background);
+}
+
+.converter {
+  background-color: var(--color-white);
+  padding: var(--spacing-large);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  width: 450px;
+}
+
+h1 {
+  font-size: var(--font-size-large);
+  margin: var(--spacing-medium) 0 var(--spacing-large);
+}
+
+p {
+  margin-bottom: var(--spacing-xlarge);
+}
+
+.input-wrapper,
+.button-wrapper {
+  display: flex;
+  gap: var(--spacing-medium);
+  margin-bottom: var(--spacing-medium);
+}
+
+.input-wrapper {
+  flex-direction: column;
+}
+
+.button-wrapper {
+  flex-direction: row;
+}
+
+label {
+  font-weight: 500;
+}
+
+input {
+  padding: var(--spacing-small);
+  font-size: var(--font-size-base);
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing-medium);
+  border: 1px solid var(--color-border);
+}
+
+hr {
+  margin-block: var(--spacing-large);
+}
+
+#conversionDirectionText {
+  font-weight: bold;
+  margin: var(--spacing-xlarge) 0 var(--spacing-medium);
+  color: var(--color-text);
+}
+
+#conversionFormulaText {
+  font-weight: bold;
+  margin: 0 0 var(--spacing-xlarge);
+  color: var(--color-text);
+  font-style: italic;
+}
+
+button {
+  width: 100%;
+  padding: var(--spacing-medium) 15px;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+button.convert {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+button.convert:hover {
+  background-color: var(--color-primary-hover);
+}
+
+button.reverse {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+button.reverse:hover {
+  background-color: var(--color-primary-hover);
+  color: var(--color-white);
+  border: 1px solid var(--color-primary-hover);
+}
+
+button.reset {
+  background-color: var(--color-danger);
+  color: var(--color-white);
+}
+
+button.reset:hover {
+  background-color: var(--color-danger-hover);
+}
